@@ -34,7 +34,7 @@ const config = {
      * @type {string}
      * @default "/favicon.ico"
      */
-    testImagePath: "images/logo.png",
+    testImagePath: "images/logo",
     
     /**
      * 系统主题配置
