@@ -16,10 +16,9 @@ const config = {
      * @property {string} url - 域名完整URL
      */
     domains: [
-        {name: "主域名", url: "https://www.badiu.com"},
-        {name: "镜像一", url: "https://google.com"},
-        {name: "镜像二", url: "https://azure.microsoft.com"},
-        {name: "镜像三", url: "https://aws.amazon.com"}
+        {name: "主域名", url: "https://bb.keqiandua.cc"},
+        {name: "镜像一", url: "bei.beliulol.xyz"},
+        {name: "镜像二", url: "bb.kegaoxiao.xyz"},
     ],
 
     /**
@@ -35,7 +34,7 @@ const config = {
      * @type {string}
      * @default "/favicon.ico"
      */
-    testImagePath: "/favicon.ico",
+    testImagePath: "images/logo.png",
     
     /**
      * 系统主题配置
