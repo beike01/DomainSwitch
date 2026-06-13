@@ -17,8 +17,8 @@ const config = {
      */
     domains: [
         {name: "主域名", url: "https://bb.keqiandua.cc"},
-        {name: "镜像一", url: "bei.beliulol.xyz"},
-        {name: "镜像二", url: "bb.kegaoxiao.xyz"},
+        {name: "镜像一", url: "https://bei.beliulol.xyz"},
+        {name: "镜像二", url: "https://bb.kegaoxiao.xyz"},
     ],
 
     /**
@@ -34,7 +34,7 @@ const config = {
      * @type {string}
      * @default "/favicon.ico"
      */
-    testImagePath: "images/logo.png",
+    testImagePath: "/images/logo.png",
     
     /**
      * 系统主题配置
