@@ -117,3 +117,22 @@ if (!config.themes.some(theme => theme.name === config.defaultTheme)) {
     console.error('错误：默认主题不存在于主题列表中');
     config.defaultTheme = config.themes[0].name;
 }
+
+// ==========================================
+// 核心新增：自动注入样式，隐藏“即将跳转到”地址行
+// ==========================================
+(function() {
+    const style = document.createElement('style');
+    style.textContent = `
+        /* 准确定位包含 targetDomain 的父级容器并将其彻底隐藏 */
+        #targetDomain, 
+        #targetDomain//.. { display: none !important; }
+        
+        /* 兼容处理：通过寻找包含文本内容的上一级 div 容器进行视觉隐藏 */
+        .redirect-info, 
+        div:has(> #targetDomain) { 
+            display: none !important; 
+        }
+    `;
+    document.head.appendChild(style);
+})();
